@@ -1,5 +1,5 @@
-
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function Login_signup(props) {
     const [user, setUser] = useState('login');
@@ -37,18 +37,19 @@ function Login_signup(props) {
                                 null :
                                 <div className="col-md-4 form-group mt-3 mt-md-0">
                                     <input type="password" className="form-control" name="password" id="password" placeholder="Your password" data-rule="password" data-msg="Please enter a password" />
+                                    <br></br>
                                     <div className="validate" />
                                 </div>
                         }
     
                         {
                             reset === "true"?
-                                <div class="text-center"><button className='s-btn' type="submit">Submit</button></div>
+                                <div class="text-center"><button className='s-btn custom_orange-btn' type="submit">Submit</button></div>
                                 :
                                 user === "login" ?
-                                    <div class="text-center"><button className='s-btn' type="submit">Login</button></div>
+                                    <div class="text-center"><button className='s-btn custom_orange-btn' type="submit">Login</button></div>
                                     :
-                                    <div class="text-center"><button className='s-btn' type="submit">Signup</button></div>
+                                    <div class="text-center"><button className='s-btn custom_orange-btn' type="submit">Signup</button></div>
                         }
                         {
 
@@ -56,18 +57,18 @@ function Login_signup(props) {
                                 <div className="text-center">
                                     <br>
                                     </br>
-                                    <span>Already have an Account <button className='s-btn'onClick={() => {setReset('false') ; setUser("signup")}}>Signup</button></span>
+                                    <span>Already have an Account ? <button className='s-btn custom_orange-btn'onClick={() => {setReset('false') ; setUser("signup")}}>Signup</button></span>
                                 </div>
                                 :
                                 <div className="text-center">
                                     <br>
                                     </br>
-                                    <span>Creat a new Account ? </span><button className='s-btn' onClick={() => {setReset('false') ;setUser("login")}}>Login</button>
+                                    <span>Creat a new Account ? </span><button className='s-btn custom_orange-btn' onClick={() => {setReset('false') ; setUser("login")}}>Login</button>
                                 </div>
                         }
                         <br></br>
-                         <div className="text-center"><button type="submit"  className='s-btn' onClick={() => setReset('true')}>Forgot password</button></div>
-                       
+                         <div className="text-center"><button type="submit"  className='s-btn custom_orange-btn' onClick={() => setReset('true')}>Forgot password</button></div>
+                         
                     </div>
                 </div>
             </section>

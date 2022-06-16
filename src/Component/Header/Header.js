@@ -34,9 +34,10 @@ import { Link, NavLink } from 'react-router-dom';
                         </form>
                     </div>
                     <div className="quote_btn-container ml-0 ml-lg-4 d-flex justify-content-center">
-                            <NavLink className="appointment-btn scrollto" to="/login_signup">
+                            <NavLink className="custom_orange-btn" to="/login_signup">
                                  <span>Login/ Signup</span>
                     </NavLink>
+                    <Link className="custom_orange-btn" to={"/refexample"}>Refexample</Link> 
                     </div>
                 </div>
             </nav>

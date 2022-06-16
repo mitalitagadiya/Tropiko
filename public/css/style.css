@@ -81,7 +81,7 @@ body {
   height: auto;
 }
 
-.header_section {}
+/* .header_section {} */
 
 .header_section .container-fluid {
   padding-right: 25px;
@@ -171,6 +171,7 @@ a:focus {
 .quote_btn-container a {
   display: inline-block;
   padding: 5px 15px;
+  margin-right: 10px;
   background-color: #fc5d35;
   color: #f7f7f7;
   font-size: 14px;
@@ -210,7 +211,7 @@ a:focus {
   background-repeat: no-repeat;
 }
 
-.slider_item-container .slider_item-detail {}
+/* .slider_item-container .slider_item-detail {} */
 
 .slider_item-detail h1 {
   font-weight: 700;
